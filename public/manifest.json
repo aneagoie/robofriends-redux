@@ -1,6 +1,6 @@
 {
-  "short_name": "Robofriends App",
-  "name": "Robofriends App",
+  "short_name": "Robofriends",
+  "name": "Robofriends PWA",
   "icons": [
     {
       "src": "favicon.ico",
