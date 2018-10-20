@@ -27,7 +27,7 @@ describe('request robots', () => {
 
     afterEach(() => {
         fetchMock.reset()
-        // fetchMock.restore()
+        fetchMock.restore()
     });
 
     it('handles a successful request', async () => {
@@ -49,10 +49,7 @@ describe('request robots', () => {
 
         const store = await mockStore({})
 
-        // return (dispatch) => {
-        //     store.dispatch(actions.requestRobots());
-        //     expect(store.getActions()).toEqual(expectedActions)
-        // }
+        // return store.dispatch(actions.requestRobots()).then(expect(store.getActions()).toEqual(expectedActions))
         
         await store.dispatch(actions.requestRobots())
 
