@@ -32,7 +32,7 @@ describe('request robots', () => {
 
     it('handles a successful request', async () => {
         const mockResult = [{ id: 1 }, { id: 2 }];
-        fetchMock.getOnce(
+        fetchMock.mock(
             'https://jsonplaceholder.typicode.com/users',
             mockResult
         )
@@ -49,6 +49,11 @@ describe('request robots', () => {
 
         const store = await mockStore({})
 
+        // return (dispatch) => {
+        //     store.dispatch(actions.requestRobots());
+        //     expect(store.getActions()).toEqual(expectedActions)
+        // }
+        
         await store.dispatch(actions.requestRobots())
 
         await store.dispatch({ type: types.REQUEST_ROBOTS_SUCCESS, payload: mockResult } );
