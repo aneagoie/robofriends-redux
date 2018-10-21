@@ -5,9 +5,6 @@ import configureStore from 'redux-mock-store';
 import thunkMiddleware from 'redux-thunk';
 import fetchMock from 'fetch-mock';
 
-// require('es6-promise').polyfill();
-// import 'isomorphic-fetch';
-
 const mockStore = configureStore([thunkMiddleware]);
 
 it('should create an action to search robots', () => {
