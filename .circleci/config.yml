@@ -14,9 +14,9 @@ jobs:
       steps:
         - checkout
         - run: echo "A first hello"
-  workflows:
-    version: 2
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+workflows:
+  version: 2
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
