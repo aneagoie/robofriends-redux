@@ -1,7 +1,7 @@
 # robofriends
 
 <details>
-  <summary>**Project Details**</summary>
+  <summary>Project Details</summary>
 
   _This project is using **react and redux**_
   _Other packages used are **react-Redux, redux-thunk and redux-logger**_
