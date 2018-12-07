@@ -1,8 +1,15 @@
 # robofriends
-Tutorial for udemy course - React + Redux
 
-To run the project:
+<details>
+  <summary>Project Details</summary>
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
+  * _This project is using **react and redux**_
+  * _Other packages used are **react-redux, redux-thunk and redux-logger**_
+
+</details>
+
+## To run the project:
+
+* Clone this repo
+* Run `npm install`
+* Run `npm start`
