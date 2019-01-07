@@ -12,9 +12,9 @@ jobs:
     steps:
     - checkout
     - run: echo "Double Trouble"
-  worklows:
-    version: 2
-    bobby_sally:
-      jobs:
-        - bobby
-        - sally
+worklows:
+  version: 2
+  bobby_sally:
+    jobs:
+      - bobby
+      - sally
