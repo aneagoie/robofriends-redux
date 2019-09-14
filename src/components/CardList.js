@@ -1,23 +1,33 @@
 import React from 'react';
 import Card from './Card';
+import {connect} from 'react-redux';
 
-const CardList = ({ robots }) => {
+
+
+const CardList = (props) => {
+    const {robots, searchField} = props;
+
+
+
+    const filteredRobots = robots.filter(robot => {
+        return robot.name.toLowerCase().includes(searchField.toLowerCase());
+    });
+
   return (
     <div>
-      {
-        robots.map((user, i) => {
-          return (
-            <Card
-              key={i}
-              id={robots[i].id}
-              name={robots[i].name}
-              email={robots[i].email}
-              />
-          );
-        })
+      { filteredRobots.map(robot => (
+          <Card key={robot.id} robot={robot}  />) )
       }
+
     </div>
   );
-}
+};
 
-export default CardList;
+const mapStateToProps = (state) => ({
+    searchField: state.robots.searchField,
+    robots: state.robots.robots,
+});
+
+
+
+export default connect(mapStateToProps, )(CardList);
