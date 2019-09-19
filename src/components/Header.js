@@ -3,18 +3,25 @@ import {NavLink} from "react-router-dom";
 
 
 
-const Header = () => {
+const Header = (props) => {
+    const {match, location} = props;
+
+
     return (
         <div>
-            <h1 className='f1'>RoboFriends</h1>
+            <h1 className=''>RoboFriends</h1>
 
             <div className={`navigation-bar`}>
                 <NavLink to={`/`}>Main</NavLink>
-                <NavLink to={`/aboute`}>Aboute</NavLink>
+                <NavLink to={`/about`}>Aboute</NavLink>
                 <NavLink to={`/test`}>Test</NavLink>
             </div>
         </div>
     );
 };
 
-export default Header;
+function areEqual(prevProps, nextProps) {
+   // If props compare return true: component didn't update
+}
+
+export default React.memo(Header);

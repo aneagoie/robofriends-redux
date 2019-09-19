@@ -16,6 +16,7 @@ src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
 }
 
 h1 {
+  font-size: 3rem;
   font-family: 'SEGA LOGO FONT';
   font-weight: 200;
   color: #0ccac4;
@@ -27,11 +28,16 @@ a{
   color: #0ccac4;
 }
 
-.header{
 
-}
 
 .navigation-bar {
   display: flex;
   justify-content: space-around;
+}
+
+
+@media(max-width:560px) {
+  h1{
+    font-size: 2rem;
+  }
 }

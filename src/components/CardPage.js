@@ -20,13 +20,13 @@ const CardPage = (props) => {
         <div>
             <SearchBox />
 
-                <Scroll>
+                {/*<Scroll>*/}
                     { isPending ? <h1>Loading</h1> :
                         <ErrorBoundry>
                             <CardList />
                         </ErrorBoundry>
                     }
-                </Scroll>
+                {/*</Scroll>*/}
 
         </div>
     );

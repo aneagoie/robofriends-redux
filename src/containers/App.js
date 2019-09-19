@@ -1,23 +1,29 @@
-import React from 'react';
-import {Switch, Route} from 'react-router-dom';
+import React, {Suspense} from 'react';
+import {Switch, Route, withRouter} from 'react-router-dom';
 
 import './App.css';
-import CardPage from "../components/CardPage";
 import Header from "../components/Header";
-import AboutePage from "../components/AboutePage";
+import CounterButton from "../components/CounterButton";
 
 
-function App() {
+const lazyCardPage = React.lazy( ()=> import("../components/CardPage"));
+const lazyAboutePage = React.lazy( ()=> import("../components/AboutePage"));
+
+
+function App(props) {
+    console.log('App render', props);
 
     return (
-        <div className='tc'>
+        <div className='tc wrapper'>
             <Header />
+            <CounterButton />
 
-            <Switch>
-                <Route exact path={`/`} component={CardPage} />
-                <Route path={`/about`} component={AboutePage} />
-            </Switch>
-
+            <Suspense fallback={<div>Loading...</div>}>
+                <Switch>
+                    <Route exact path={`/`} component={lazyCardPage} />
+                    <Route path={`/about`} component={lazyAboutePage} />
+                </Switch>
+            </Suspense>
         </div>
     );
 }
@@ -25,6 +31,6 @@ function App() {
 
 
 
-export default App;
+export default withRouter(App);
 
 

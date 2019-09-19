@@ -7,8 +7,6 @@ import {connect} from 'react-redux';
 const CardList = (props) => {
     const {robots, searchField} = props;
 
-
-
     const filteredRobots = robots.filter(robot => {
         return robot.name.toLowerCase().includes(searchField.toLowerCase());
     });
@@ -16,7 +14,7 @@ const CardList = (props) => {
   return (
     <div>
       { filteredRobots.map(robot => (
-          <Card key={robot.id} robot={robot}  />) )
+          <Card key={robot.id} {...robot}  />) )
       }
 
     </div>

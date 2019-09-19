@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Card SnapShot 1`] = `ShallowWrapper {}`;
+
+exports[`Card Name 1`] = `ShallowWrapper {}`;

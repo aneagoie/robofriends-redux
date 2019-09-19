@@ -2,7 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Kchaiene.github.io/robofriends-redux",
+  "homepage": "https://Kchaiene.github.io/robofriends-redux",
   "dependencies": {
     "react": "16.9.0",
     "react-dom": "16.9.0",
@@ -23,8 +23,11 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
     "gh-pages": "2.1.1",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "typescript": "^3.6.3"
   },
   "eslintConfig": {
     "extends": "react-app"
