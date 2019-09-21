@@ -1,47 +1,26 @@
 {
-  "name": "robofriends",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://Kchaiene.github.io/robofriends-redux",
-  "dependencies": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-redux": "7.1.1",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1",
-    "redux": "4.0.4",
-    "redux-saga": "^1.0.5",
-    "redux-thunk": "2.3.0",
-    "tachyons": "4.11.1"
-  },
+  "name": "robofriends-NextJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "next"
   },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "gh-pages": "2.1.1",
-    "redux-devtools-extension": "^2.13.8",
-    "typescript": "^3.6.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kchaiene/robofriends-redux.git"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kchaiene/robofriends-redux/issues"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "homepage": "https://github.com/Kchaiene/robofriends-redux#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
