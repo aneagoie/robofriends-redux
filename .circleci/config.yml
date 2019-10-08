@@ -1,13 +1,13 @@
- version: 2
- jobs:
-   group1:
-     docker:
-       - image: circleci/ruby:2.4.1
-     steps:
-       - checkout
-       - run: echo "A first hello"
- worksflows:
-   version: 2
-   testsApp:
-     jobs:
-       - group1
+version: 2
+jobs:
+  group1:
+    docker:
+     - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "A first hello"
+worksflows:
+  version: 2
+  testsApp:
+    jobs:
+      - group1
