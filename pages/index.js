@@ -5,6 +5,9 @@ import Image from "../components/Image";
 // location.history handling for you.
 //You don't need to write even a single line of client-side routing code.
 const Index = () => {
+    let x = {};
+    console.log('Index render', x.toString());
+
     return (
         <div>
             <Link href="/about">
