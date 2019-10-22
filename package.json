@@ -1,21 +1,26 @@
 {
-  "name": "robofriends",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "react-scripts": "1.0.17",
-    "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0",
-    "tachyons": "^4.9.0"
-  },
+  "name": "robofriends-NextJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kchaiene/robofriends-redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kchaiene/robofriends-redux/issues"
+  },
+  "homepage": "https://github.com/Kchaiene/robofriends-redux#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   }
 }
