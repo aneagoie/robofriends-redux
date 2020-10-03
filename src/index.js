@@ -12,7 +12,7 @@ import { requestRobots, searchRobots } from './reducers'
 
 import './index.css';
 
-const logger = createLogger()
+const logger = createLogger() 
 
 const rootReducers = combineReducers({requestRobots, searchRobots})
 
