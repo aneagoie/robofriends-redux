@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage" : "https://jamesjaj.github.io/robofriends-redux/",
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
