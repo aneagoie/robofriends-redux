@@ -8,3 +8,4 @@ To run the project:
 3. Run `npm start`
 
 *visit https://zerotomastery.io/ for more*
+
